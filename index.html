@@ -2,72 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome all</title>
+  <title>Jordi Tabit Profile</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="card-white text-center">
-      <img src="images/profile_pic.jpeg" alt="Profile picture" class="img-circle">
-      <h1>Jordi Tabit</h1>
-      <h2>Web Dev learner @Le Wagon</h2>
-      <p>
-        After 4 years working on city planning, I wanted to learn coding to improve my technical set of skills.
-      </p>
-    </div>
-    <div class="card-white text-center">
-      <ul class="list-inline">
-      <li><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li>
-      <li><a href="#"><i class="fab fa-github"></i>Github</a></li>
+  <div id="sidebar">
+    <ul>
+      <li><a href="#summary"><i class="fas fa-user-circle"></i></a></li>
+      <li><a href="#favorite-movies"><i class="fas fa-film"></i></a></li>
+      <li><a href="#projects"><i class="fas fa-tasks"></i></a></li>
     </ul>
-    </div>
-    <div class="card-white">
-      <h2>My Favorite movies</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td><img src="images/arrival_movie.jpg" width="200" alt="Arrival"></td>
-            <td>
-              <h3>Arrival</h3>
-              <p>A linguist is recruited by the military to communicate with alien lifeforms after twelve mysterious spacecrafts land around the world.</p>
-            </td>
-          </tr>
-          <tr>
-            <td><img src="images/kill_bill_movie.jpg" width="200" height="300"alt="Kill Bill"></td>
-            <td>
-              <h3>Kill Bill</h3>
-              <p>After awakening from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.</p>
-            </td>
-          </tr>
-          <tr>
-            <td><img src="images/drive_movie.jpg" width="200" alt="Drive"></td>
-            <td>
-              <h3>Drive</h3>
-              <p>A mysterious Hollywood stuntman and mechanic moonlights as a getaway driver and finds himself in trouble when he helps out his neighbor.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="card-white text-center">
-      <h2>My projects</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td><img src="images/cinequizz_main.png" width="300" alt="Cine Quizz"></td>
-          </tr>
-          <tr>
-            <td>
-              <h3><a href="http://www.utc.fr/si28/ProjetsUpload/P2014_si28p007/jeu/index.html">Ciné Quizz</a></h3>
-              <p>Interactive Quizz on cinema. Find movies hidden behind the scene by revealing successive items !</p>
-              <p>May 2014 - buddies: Max Daragon & Brice Vallée</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+  </div>
+  <div id="page-content">
+    <div class="container">
+      <div class="card-white text-center" id="summary">
+        <img src="images/profile_pic.jpeg" alt="Profile picture" class="img-circle">
+        <h1>Jordi Tabit</h1>
+        <h2>Web Dev learner @Le Wagon</h2>
+        <p>
+          After 4 years working on city planning, I wanted to learn coding to improve my technical set of skills.
+        </p>
+      </div>
+      <div class="card-white text-center">
+        <ul class="list-inline">
+        <li><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+        <li><a href="#"><i class="fab fa-github"></i>Github</a></li>
+      </ul>
+      </div>
+      <div class="card-white" id="favorite-movies">
+        <h2>My Favorite movies</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td><img src="images/arrival_movie.jpg" width="200" alt="Arrival"></td>
+              <td>
+                <h3>Arrival</h3>
+                <p>A linguist is recruited by the military to communicate with alien lifeforms after twelve mysterious spacecrafts land around the world.</p>
+                <p><em>2011, Denis Villeneuve</em></p>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="images/hell_or_high_water_movie.jpg" width="200" height="300"alt="Hell or High Water"></td>
+              <td>
+                <h3>Hell or High Water</h3>
+                <p>A divorced father and his ex-con older brother resort to a desperate scheme in order to save their family's ranch in West Texas.</p>
+                <p><em>2016, Dadid Mackenzie</em></p>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="images/drive_movie.jpg" width="200" alt="Drive"></td>
+              <td>
+                <h3>Drive</h3>
+                <p>A mysterious Hollywood stuntman and mechanic moonlights as a getaway driver and finds himself in trouble when he helps out his neighbor.</p>
+                <p><em>2011, Nicolas Winding Refn</em></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card-white text-center" id="projects">
+        <h2>My projects</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td><img src="images/cinequizz_main.png" width="300" alt="Cine Quizz"></td>
+            </tr>
+            <tr>
+              <td>
+                <h3><a href="http://www.utc.fr/si28/ProjetsUpload/P2014_si28p007/jeu/index.html">Ciné Quizz</a></h3>
+                <p>Interactive Quizz on cinema. Find movies hidden behind the scene by revealing successive items !</p>
+                <p><em>May 2014 - buddies: Max Daragon & Brice Vallée</em></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </body>
