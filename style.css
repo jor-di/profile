@@ -33,6 +33,7 @@
   top: 0;
   bottom: 0;
   text-align: center;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 #sidebar ul {
@@ -45,9 +46,9 @@
     margin-bottom: 50px;
 }
 
-.fas {
+.fas, .fa-angrycreative {
   font-size: 2em;
-  color: #38897F;
+  color: rgba(350, 350, 350, 0.7);
 }
 
 #page-content {
@@ -72,7 +73,7 @@ a {
   color: rgba(50, 50, 50, 1);
 }
 
-.fab {
+.fa-github, .fa-linkedin {
   font-size: 1.5em;
   padding: 10px;
   vertical-align: middle;
